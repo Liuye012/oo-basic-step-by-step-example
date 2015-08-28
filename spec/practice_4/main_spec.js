@@ -35,7 +35,7 @@ describe("Person", function(){
 
         });
 
-        it("should overwrite Person introduce, introduce with name, age and class number", function(){
+        it("should overwrite Person introduce, introduce with class number", function(){
             var student = new Student("Tom", 21, 2);
             var introduce = student.introduce();
 
