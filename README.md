@@ -15,7 +15,7 @@
 ### 运行测试的办法
 
     npm install
-    node_modules/mocha/bin/mocha spec/practice_1/*
+    node_modules/mocha/bin/mocha spec/practice_1/*.js
 
 ## 学习材料(内容有重复)
 
