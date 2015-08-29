@@ -8,10 +8,10 @@ chai.use(sinonChai);
 
 var Person = require("../../src/practice_8/person.js");
 var Student = require("../../src/practice_8/student.js");
-var Teacher = require("../../src/practice_8/teacher.js");
+var Teacher = require("../../src/practice_8/teacher-option2.js");
 var Class = require("../../src/practice_8/class.js");
 
-describe("Person", function(){
+describe("Option-2 Person", function(){
     it("should have field name and age", function(){
         var person = new Person("Tom", 21);
         expect(person.name).to.equal("Tom");
