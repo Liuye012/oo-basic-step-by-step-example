@@ -46,7 +46,7 @@ describe("Person", function(){
 
     });
 
-    var worker = new Worker("Tom", 21);
+
     describe("Worker", function(){
 
         it("should have field name, age", function(){
@@ -56,11 +56,8 @@ describe("Person", function(){
 
         });
         it("should overwrite Person introduce, introduce with name and age, but different with Person introduce", function(){
+            var worker = new Worker("Tom", 21);
             var introduce = worker.introduce();
-            worker.copy = function(){
-                return new this.constructor();
-
-            }
             expect(introduce).to.equal("My name is Tom. I am 21 years old. I am a Teacher. I have a job.");
 
         });
